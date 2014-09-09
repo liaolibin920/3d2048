@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>three.js</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+
+            #canvas{
+
+                border: none;
+                cursor: pointer;
+                width: 600px;
+                height: 600px;
+                background-color: #EEEEEE;
+            }
+		</style>
+	</head>
+	<body>
+    <div><span>总分：</span><span id="score"></span></div>
+    <div id="canvas"></div>
+	<script src="js/lib/three.min.js"></script>
+    <script src="js/lib/threex.dynamictexture.js"></script>
+    <script src="js/eventmanger.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/scene3d.js"></script>
+    <script src="js/game.js"></script>
+<script>
+
+ var s3d = new scene3d("canvas", window.innerWidth, window.innerHeight);
+s3d.init();
+
+new game(scene,grid,eventmanger,cube);
+
+
+
+
+
+
+</script>
+
+	</body>
+</html>
